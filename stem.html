@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trò chơi STEM Văn Miếu Mao Điền</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Văn Miếu Mao Điền</div>
+    <nav class="main-nav">
+      <a href="index.html">Trang chủ</a>
+      <a href="tour.html">Tham quan</a>
+      <a href="heroes.html">Danh nhân</a>
+      <a href="stem.html" class="active">Trò chơi STEM</a>
+      <a href="audio.html">Thuyết minh</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1>Trắc nghiệm STEM</h1>
+      <p>Chọn câu trả lời đúng và nhận phản hồi ngay để kiểm tra kiến thức.</p>
+      <div class="quiz-card" id="quiz-card">
+        <h2 id="question"></h2>
+        <div id="answers"></div>
+        <p id="feedback"></p>
+        <button id="next-btn" class="btn btn-primary" style="display:none;">Câu tiếp theo</button>
+      </div>
+      <p id="final-score" style="display:none; font-weight:bold;"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Văn Miếu Mao Điền | STEAM</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

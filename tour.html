@@ -9,49 +9,60 @@
 <body>
   <header class="site-header">
     <div class="logo">Văn Miếu Mao Điền</div>
-    <nav class="main-nav">
-      <a href="index.html">Trang chủ</a>
-      <a href="tour.html" class="active">Tham quan</a>
-      <a href="heroes.html">Danh nhân</a>
-      <a href="stem.html">Trò chơi STEM</a>
-      <a href="audio.html">Thuyết minh</a>
-    </nav>
   </header>
 
-  <main class="container">
-    <section>
-      <h1>Hành trình tham quan</h1>
-      <p>Khám phá ba khu vực chính của di tích theo từng bước trải nghiệm.</p>
-      <div class="stepper" id="tour-steps">
-        <button class="step active" data-step="1">1. Cổng đình</button>
-        <button class="step" data-step="2">2. Khu thờ</button>
-        <button class="step" data-step="3">3. Bia tiến sĩ</button>
-      </div>
+  <div class="page-layout">
+    <aside class="sidebar">
+      <h2>Điều hướng</h2>
+      <nav class="main-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="tour.html" class="active">Tham quan</a>
+        <a href="heroes.html">Danh nhân</a>
+        <a href="stem.html">Trò chơi</a>
+      </nav>
+      <h2>Thông tin Khoa học</h2>
+      <ul>
+        <li><a href="#">Kiến trúc Cổ điển</a></li>
+        <li><a href="#">Ý nghĩa Văn hóa</a></li>
+        <li><a href="#">Bảo tồn Di sản</a></li>
+      </ul>
+    </aside>
 
-      <div class="tour-content" id="tour-content">
-        <article class="tour-card active" data-step="1">
-          <img src="Cổng đình.webp" alt="Cổng đình" />
-          <h2>Cổng đình</h2>
-          <p>Cổng đình là lối vào trang trọng, biểu tượng của sự mở đầu cho hành trình tri thức và tôn kính truyền thống.</p>
-        </article>
-        <article class="tour-card" data-step="2">
-          <img src="Khu thờ phượng.jpg" alt="Khu thờ" />
-          <h2>Khu thờ</h2>
-          <p>Khu thờ là nơi thể hiện lòng thành kính với các vị thành hoàng và danh nhân, có không gian tĩnh lặng và linh thiêng.</p>
-        </article>
-        <article class="tour-card" data-step="3">
-          <img src="Bia tiến sĩ .jpg" alt="Bia tiến sĩ" />
-          <h2>Bia tiến sĩ</h2>
-          <p>Bia tiến sĩ ghi danh các sĩ tử đạt tiến sĩ, lưu giữ truyền thống khoa bảng và khát vọng giáo dục.</p>
-        </article>
-      </div>
+    <main class="main-content">
+      <section>
+        <h1>Hành trình tham quan</h1>
+        <p>Khám phá ba khu vực chính của di tích theo từng bước trải nghiệm.</p>
+        <div class="stepper" id="tour-steps">
+          <button class="step active" data-step="1">1. Cổng đình</button>
+          <button class="step" data-step="2">2. Khu thờ</button>
+          <button class="step" data-step="3">3. Bia tiến sĩ</button>
+        </div>
 
-      <div class="slideshow-controls">
-        <button id="prev-step" class="btn">Trước</button>
-        <button id="next-step" class="btn btn-primary">Tiếp</button>
-      </div>
-    </section>
-  </main>
+        <div class="tour-content" id="tour-content">
+          <article class="tour-card active" data-step="1">
+            <img src="Cổng đình.webp" alt="Cổng đình" />
+            <h2>Cổng đình</h2>
+            <p>Cổng đình là lối vào trang trọng, biểu tượng của sự mở đầu cho hành trình tri thức và tôn kính truyền thống.</p>
+          </article>
+          <article class="tour-card" data-step="2">
+            <img src="Khu thờ phượng.jpg" alt="Khu thờ" />
+            <h2>Khu thờ</h2>
+            <p>Khu thờ là nơi thể hiện lòng thành kính với các vị thành hoàng và danh nhân, có không gian tĩnh lặng và linh thiêng.</p>
+          </article>
+          <article class="tour-card" data-step="3">
+            <img src="Bia tiến sĩ .jpg" alt="Bia tiến sĩ" />
+            <h2>Bia tiến sĩ</h2>
+            <p>Bia tiến sĩ ghi danh các sĩ tử đạt tiến sĩ, lưu giữ truyền thống khoa bảng và khát vọng giáo dục.</p>
+          </article>
+        </div>
+
+        <div class="slideshow-controls">
+          <button id="prev-step" class="btn">Trước</button>
+          <button id="next-step" class="btn btn-primary">Tiếp</button>
+        </div>
+      </section>
+    </main>
+  </div>
 
   <footer class="site-footer">
     <p>© 2026 Văn Miếu Mao Điền | Học sinh tham quan</p>
